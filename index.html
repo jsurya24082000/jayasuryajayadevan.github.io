@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaya Surya Jaya Devan | Data Science Portfolio</title>
+  <title>Jaya Surya Jaya Devan | Data Science Portfolio & Resume</title>
   <style>
     /* Reset & Base */
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,19 +26,28 @@
     nav .container { display: flex; justify-content: center; gap: 30px; }
     nav a { padding: 15px 0; display: inline-block; font-weight: bold; }
 
-    /* Sections */
-    #about p { margin-top: 20px; }
+    /* Section Headings */
+    section h2 { font-size: 2rem; margin-bottom: 20px; color: #007acc; }
+    .resume-section h3 { font-size: 1.4rem; margin-top: 20px; color: #333; }
+    .resume-section h4 { font-size: 1.1rem; margin-top: 15px; }
+    .resume-section h4 span { font-style: italic; font-weight: normal; color: #666; float: right; }
 
     /* Projects Grid */
-    #projects .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
+    #projects .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
     .card { background: #fff; border: 1px solid #e1e1e1; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .card h3 { margin-bottom: 10px; }
     .card p { margin-bottom: 15px; }
     .card a.btn { display: inline-block; padding: 8px 12px; border: 1px solid #007acc; border-radius: 4px; }
 
     /* Skills List */
-    #skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    #skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
     #skills li { background: #007acc; color: #fff; padding: 8px 12px; border-radius: 20px; }
+
+    /* Resume Styles */
+    .resume-section { margin-top: 20px; }
+    .resume-section p { margin-bottom: 10px; }
+    .resume-section ul { list-style: disc; margin-left: 20px; margin-bottom: 10px; }
+    .resume-section li { margin-bottom: 5px; }
 
     /* Contact */
     #contact form { max-width: 600px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
@@ -55,7 +64,7 @@
   <header>
     <div class="container">
       <h1>Jaya Surya Jaya Devan</h1>
-      <p>Data Science Intern | Machine Learning | Analytics</p>
+      <p>Data Science Intern | ETL & Backend Developer</p>
     </div>
   </header>
 
@@ -65,6 +74,7 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -74,8 +84,9 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm a graduate student in Data Science at the University of Maryland, College Park, with hands-on experience in Python, R, and database systems.
-        I specialize in building machine learning models, analyzing large datasets, and creating data-driven insights.
+        Detail-oriented ETL and backend developer with over 2 years of experience designing robust data pipelines and APIs at Tata Consultancy Services.
+        Proven success optimizing workflows to reduce processing time by 20% and delivering scalable, compliant data solutions.
+        Currently pursuing an M.S. in Data Science at the University of Maryland, College Park.
       </p>
     </div>
   </section>
@@ -86,19 +97,8 @@
       <h2>Featured Projects</h2>
       <div class="grid">
         <div class="card">
-          <h3>Redis Cache Implementation</h3>
-          <p>Improved query performance by integrating Redis caching layer for a web application, reducing average response time by 60%.</p>
-          <a class="btn" href="#" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>MNIST Digit Classifier</h3>
-          <p>Built and optimized a convolutional neural network in TensorFlow to achieve 98% accuracy on MNIST dataset.</p>
-          <a class="btn" href="#" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-          <h3>Spark Data Pipeline</h3>
-          <p>Designed scalable ETL pipeline using PySpark to process and analyze large student performance data from Kaggle.</p>
-          <a class="btn" href="#" target="_blank">View on GitHub</a>
+          <h3>Malicious Website Detection</h3>
+          <p>Built a real-time detection system using Random Forest and SVM to flag malicious websites, boosting detection accuracy by 30%.</p>
         </div>
       </div>
     </div>
@@ -109,15 +109,76 @@
     <div class="container">
       <h2>Technical Skills</h2>
       <ul>
+        <li>Java</li>
+        <li>JavaScript (ES6+)</li>
         <li>Python</li>
-        <li>Machine Learning</li>
-        <li>TensorFlow & PyTorch</li>
+        <li>SQL</li>
+        <li>HTML5 & CSS3</li>
+        <li>Informatica PowerCenter</li>
+        <li>Data Warehousing</li>
+        <li>Spring Boot & REST APIs</li>
+        <li>Docker</li>
+        <li>scikit-learn, TensorFlow & PyTorch</li>
         <li>Pandas & NumPy</li>
-        <li>SQL & NoSQL</li>
-        <li>MongoDB & Redis</li>
-        <li>Spark & Dask</li>
-        <li>Git & GitHub</li>
+        <li>AWS (Developer Associate, Cloud Practitioner)</li>
+        <li>Git, Linux & Shell</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <div class="container resume-section">
+      <h2>Resume</h2>
+
+      <h3>Professional Summary</h3>
+      <p>Detail-oriented ETL and backend developer with over 2 years of experience designing robust data pipelines and APIs at Tata Consultancy Services. Proven success optimizing workflows to reduce processing time by 20% and delivering scalable, compliant data solutions. Currently pursuing an M.S. in Data Science at University of Maryland, College Park (2024–2026).</p>
+
+      <h3>Experience</h3>
+      <div class="resume-job">
+        <h4>ETL Developer <span>Jan 2023 – Jul 2024</span></h4>
+        <p><em>Tata Consultancy Services, Chennai, India</em></p>
+        <ul>
+          <li>Architected ETL workflows to ingest, transform, and load over 100M records/month into the enterprise data warehouse.</li>
+          <li>Optimized mappings and workflows, improving data quality and reducing processing time by 20%.</li>
+          <li>Partnered with stakeholders to translate business requirements into scalable, governance-compliant ETL solutions.</li>
+          <li>Authored end-to-end process documentation and led knowledge-transfer sessions.</li>
+        </ul>
+      </div>
+      <div class="resume-job">
+        <h4>Backend Developer <span>Jul 2022 – Jan 2023</span></h4>
+        <p><em>Tata Consultancy Services, Chennai, India</em></p>
+        <ul>
+          <li>Developed RESTful services using Java/Spring Boot, enhancing throughput and reliability.</li>
+          <li>Designed database schemas and optimized SQL queries, improving query performance by 15%.</li>
+          <li>Integrated third-party APIs and implemented robust error-handling mechanisms.</li>
+          <li>Contributed to Agile sprint planning, estimation, and peer code reviews.</li>
+        </ul>
+      </div>
+
+      <h3>Projects</h3>
+      <h4>Malicious Website Detection (ML)</h4>
+      <ul>
+        <li>Built a real-time detection system (Random Forest, SVM) to flag malicious websites.</li>
+        <li>Developed a browser extension for on-the-fly URL scanning; improved detection accuracy by 30%.</li>
+        <li>Implemented a user feedback loop for false-positive reporting, continuously refining the model.</li>
+      </ul>
+
+      <h3>Certifications</h3>
+      <ul>
+        <li>AWS Certified Developer – Associate (DVA)</li>
+        <li>AWS Certified Cloud Practitioner (CCP)</li>
+      </ul>
+
+      <h3>Education</h3>
+      <ul>
+        <li>M.S. in Data Science, University of Maryland, College Park (2024 – 2026 expected)</li>
+        <li>B.Engg. in Computer Science, Anna University Chennai (May 2022)</li>
+      </ul>
+
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:jsurya24082000@gmail.com">jsurya24082000@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/jayasurya-jayadevan" target="_blank">linkedin.com/in/jayasurya-jayadevan</a></p>
     </div>
   </section>
 
@@ -125,7 +186,7 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <form action="mailto:jsurya24082000@gmail.com" method="post" enctype="text/plain">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
@@ -137,7 +198,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 Jaya Surya Jaya Devan. All rights reserved.</p>
+      <p>© 2025 Jaya Surya Jaya Devan. All rights reserved.</p>
     </div>
   </footer>
 </body>
